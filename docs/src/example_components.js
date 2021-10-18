@@ -27,24 +27,24 @@ export default class ExampleComponents extends React.Component {
   constructor(props) {
     super(props);
     this.examples = [
-      Default,
-      Jalaali,
-      HideTodayButton,
-      DisabledTimepicker,
-      SwitchIsGregorian,
-      CalendarPicker,
+      // Default,
+      // Jalaali,
+      // HideTodayButton,
+      // DisabledTimepicker,
+      // SwitchIsGregorian,
+      // CalendarPicker,
       RangeSelector,
-      LimitWithMinMax,
-      DisabledRange,
-      HighlightRange,
-      Disabled,
-      ReactHook,
-      RemoveDate,
-      Placeholder,
-      ToggleButton,
-      OnInputChange,
-      JalaaliWithEnglishDigit,
-      SetTodayOnBlur
+      // LimitWithMinMax,
+      // DisabledRange,
+      // HighlightRange,
+      // Disabled,
+      // ReactHook,
+      // RemoveDate,
+      // Placeholder,
+      // ToggleButton,
+      // OnInputChange,
+      // JalaaliWithEnglishDigit,
+      // SetTodayOnBlur
     ];
   }
 

@@ -468,14 +468,14 @@ li.rc-time-picker-panel-select-option-disabled:hover {
 .highlighted {
   background-color: #e7f1f2;
   &.rangestart {
-    background: linear-gradient(90deg, #e7f1f2 50%, white 50%,);
+    background: linear-gradient(90deg, #e7f1f2 50%, transparent 50%,);
     // button {
     //   background: white !important;
     //   border: 1px solid #4285f4 !important;
     // }
   }
   &.rangeend {
-    background: linear-gradient(90deg, white 50%, #e7f1f2 50%);
+    background: linear-gradient(90deg, transparent 50%, #e7f1f2 50%);
     button {
       background: white !important;
       border: 1px solid #4285f4 !important;

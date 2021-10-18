@@ -477,13 +477,13 @@ li.rc-time-picker-panel-select-option-disabled:hover {
 }
 
 .highlighted.rangestart {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e7f1f2), color-stop(50%, white));
-  background: linear-gradient(90deg, #e7f1f2 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e7f1f2), color-stop(50%, transparent));
+  background: linear-gradient(90deg, #e7f1f2 50%, transparent 50%);
 }
 
 .highlighted.rangeend {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #e7f1f2));
-  background: linear-gradient(90deg, white 50%, #e7f1f2 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #e7f1f2));
+  background: linear-gradient(90deg, transparent 50%, #e7f1f2 50%);
 }
 
 .highlighted.rangeend button {

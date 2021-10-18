@@ -60,10 +60,13 @@ export default class Day extends Component {
       [styles.currentMonth]: isCurrentMonth,
       [styles.today]: isToday,
       [styles.disabled]: disabled,
+    });
+
+    const highlightContainer = classnames({
       [styles.highlighted]: highlighted,
       [styles.rangeend]: isRangeEnd,
       [styles.rangestart]: isRangeStart,
-    });
+    })
 
     const highlightDotContainer = classnames("highLightDot-container", {
       [styles.disabled]: disabled
@@ -71,9 +74,11 @@ export default class Day extends Component {
 
     return (
       <div className={className}>
+        <div className={highlightContainer}>
         <button type="button" onClick={this.handleClick.bind(this)} disabled={disabled} {...rest}>
           {isGregorian ? day.format('D') : persianNumber(day.format('jD'))}
         </button>
+        </div>
         <div className={highlightDotContainer} onClick={this.handleClick.bind(this)}>
           {colors.map((x, i) => (
             <span key={i} className="highLightDot" style={{ backgroundColor: x }}></span>
