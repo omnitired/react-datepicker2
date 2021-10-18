@@ -8,6 +8,7 @@ import HideTodayButton from './examples/HideTodayButton';
 import DisabledTimepicker from './examples/disabledTimepicker';
 import SwitchIsGregorian from './examples/switchIsGregorian';
 import CalendarPicker from './examples/calendarPicker';
+import RangeSelector from './examples/rangeSelector';
 import LimitWithMinMax from './examples/limitWithMinMax';
 import DisabledRange from './examples/disabledRange';
 import HighlightRange from './examples/HighlightRange';
@@ -32,6 +33,7 @@ export default class ExampleComponents extends React.Component {
       DisabledTimepicker,
       SwitchIsGregorian,
       CalendarPicker,
+      RangeSelector,
       LimitWithMinMax,
       DisabledRange,
       HighlightRange,

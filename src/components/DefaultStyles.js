@@ -12,5 +12,8 @@ export const defaultStyles = {
   selected: 'selected',
   today: 'today',
   dayPickerContainer: 'dayPickerContainer',
-  disabled: 'disabled'
+  disabled: 'disabled',
+  highlighted: 'highlighted',
+  rangeend: 'rangeend',
+  rangestart: 'rangestart',
 };

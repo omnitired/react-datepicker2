@@ -129,8 +129,8 @@
 }
 
 .calendarContainer .dayWrapper button.selected {
-  background-color: #337ab7;
-  color: #ffffff;
+  background-color: #337ab7 !important;
+  color: #ffffff !important;
 }
 
 .calendarContainer .dayWrapper:not(.currentMonth) button {
@@ -211,8 +211,8 @@
 .calendarContainer .selected button:hover :not([disabled]),
 .calendarContainer .selected button:active,
 .calendarContainer .selected button:focus {
-  background-color: #4285f4;
-  color: #ffffff;
+  background-color: #4285f4 !important;
+  color: #ffffff !important;
 }
 
 .calendarContainer.jalaali {
@@ -470,6 +470,25 @@ li.rc-time-picker-panel-select-option-disabled:hover {
 
 .today button {
   border: 3px solid #4285f4 !important;
+}
+
+.highlighted {
+  background-color: #e7f1f2;
+}
+
+.highlighted.rangestart {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e7f1f2), color-stop(50%, white));
+  background: linear-gradient(90deg, #e7f1f2 50%, white 50%);
+}
+
+.highlighted.rangeend {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #e7f1f2));
+  background: linear-gradient(90deg, white 50%, #e7f1f2 50%);
+}
+
+.highlighted.rangeend button {
+  background: white !important;
+  border: 1px solid #4285f4 !important;
 }
 
 .jalaali.calendarContainer .selectToday {

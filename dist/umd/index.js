@@ -43,7 +43,7 @@
     }
   }
 
-  var css_248z = ".calendarContainer{position:relative;border-radius:4px;-webkit-box-shadow:0 3px 15px rgba(0,0,0,.2);box-shadow:0 3px 15px rgba(0,0,0,.2);width:320px;margin:auto;text-align:center;padding:15px;background-color:#fff}.calendarContainer *{-webkit-box-sizing:border-box;box-sizing:border-box}.calendarContainer .dayPickerContainer:after,.calendarContainer .daysOfWeek:after,.calendarContainer .monthsList:after{content:'';display:block;clear:both}.datepicker-input{-webkit-box-sizing:border-box;box-sizing:border-box}.calendarContainer .heading{height:auto;font-weight:700;margin-bottom:10px}.calendarContainer .heading>button{background:0 0;margin:5px 0;border:none;text-align:center;line-height:30px;width:36px;height:32px;cursor:pointer}.calendarContainer .heading>button:hover{background-color:#f2f2f2}.calendarContainer .heading svg{width:10px;fill:#777}.calendarContainer .heading .next,.calendarContainer .heading .prev{width:42px;height:42px;border-radius:50%;margin:0}.calendarContainer .heading .prev{float:right}.calendarContainer .heading .next{float:left}.calendarContainer .heading .title{height:auto;border-radius:4px;width:auto;margin:0 5px;border:1px solid #f7f7f7;text-align:center;display:inline-block;font-weight:400;padding:4px 15px 5px 15px;line-height:1.5;font-size:1.2em;max-height:none}.jalaali.calendarContainer .heading .title{padding:4px 15px 7px 15px}.calendarContainer .dayWrapper{float:left;width:14.28571429%;margin-top:5px;position:relative}.calendarContainer .dayWrapper button{border:none;background:0 0;outline:0;width:100%;cursor:pointer;width:40px;height:40px;border-radius:50%;font-size:1.1em;padding:0;line-height:1.5;padding:0 0 1px 0}.jalaali.calendarContainer .dayWrapper button{padding:0 0 1px 0}.calendarContainer .dayWrapper:not(.selected) button:hover{background-color:#d6f1ff}.calendarContainer .dayWrapper button[disabled]{color:#aaa;cursor:not-allowed;background-color:#ebebeb}.calendarContainer .dayWrapper button.selected{background-color:#337ab7;color:#fff}.calendarContainer .dayWrapper:not(.currentMonth) button{opacity:.5}.calendarContainer .daysOfWeek{margin-bottom:5px;padding-bottom:5px;display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;color:#919191}.calendarContainer .daysOfWeek>div{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:42px}.calendarContainer .monthsList{clear:both;width:100%}.calendarContainer .monthsList button{width:33.33333332%;height:25%;float:right;border:1px solid #f9f9f9;outline:0;font-size:1em;background:#fff;padding:10px 0;cursor:pointer}.calendarContainer .monthsList button:hover{background:#eee;cursor:pointer}.calendarContainer .yearsList{clear:both;width:100%;max-height:200px;overflow-y:scroll}.calendarContainer .yearsList button{width:20%;height:25%;float:right;border:1px solid #f9f9f9;outline:0;font-size:1em;background:#fff;padding:10px 0;cursor:pointer}.calendarContainer .yearsList button:hover{background:#eee;cursor:pointer}.calendarContainer .selected button,.calendarContainer .selected button:active,.calendarContainer .selected button:focus,.calendarContainer .selected button:hover :not([disabled]){background-color:#4285f4;color:#fff}.calendarContainer.jalaali{direction:rtl}.calendarContainer.jalaali .dayWrapper{float:right}.time-picker-container{margin-bottom:10}.time-picker-container>.time-label{float:left;line-height:30px;width:50%;text-align:center}.time-picker-container>.time-picker-panel{float:right;width:50%}.time-picker-container.jalaali>.time-label{float:right}.time-picker-container.jalaali>.time-picker-panel{float:left}.rc-time-picker{border-radius:4px;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;width:110px;border:1px solid #f7f7f7;font-size:1.2em}.rc-time-picker *{-webkit-box-sizing:border-box;box-sizing:border-box}.rc-time-picker-input{margin:4px 0;padding:0 15px 1px 15px;direction:ltr;text-align:center;width:100%;position:relative;display:inline-block;cursor:pointer;font-size:1em;line-height:1.5;border:none;background-image:none;background-color:transparent;-webkit-box-shadow:none;box-shadow:none}.jalaali.calendarContainer .rc-time-picker-input{padding:0 15px 3px 15px}.rc-time-picker-input:focus{-webkit-box-shadow:none;box-shadow:none;border:none;background-color:#f2f2f2}.rc-time-picker:hover{background-color:#f2f2f2}.rc-time-picker-panel{z-index:2001;width:170px;position:absolute;-webkit-box-sizing:border-box;box-sizing:border-box}.rc-time-picker-panel *{-webkit-box-sizing:border-box;box-sizing:border-box}.rc-time-picker-panel-inner{display:inline-block;position:relative;outline:0;list-style:none;font-size:12px;text-align:left;background-color:#fff;border-radius:3px;-webkit-box-shadow:0 1px 5px #ccc;box-shadow:0 1px 5px #ccc;background-clip:padding-box;border:1px solid #ccc;line-height:1.5}.rc-time-picker-panel-input{margin:0;padding:0;width:100%;cursor:default;line-height:1.5;outline:0;border:1px solid transparent;padding:4px 0;font-size:1.4em;text-align:center;font-family:inherit}.rc-time-picker-panel-input,.rc-time-picker-panel-input:hover{-webkit-box-shadow:none;box-shadow:none;border:none}.rc-time-picker-panel-input-wrap{-webkit-box-sizing:border-box;box-sizing:border-box;position:relative;padding:6px;border-bottom:1px solid #e9e9e9}.rc-time-picker-panel-input-invalid{border-color:red}.rc-time-picker-panel-clear-btn{position:absolute;right:6px;cursor:pointer;overflow:hidden;width:20px;height:20px;text-align:center;line-height:20px;top:6px;margin:0}.rc-time-picker-panel-clear-btn:after{content:'x';font-size:12px;color:#aaa;display:inline-block;line-height:1;width:20px;-webkit-transition:color .3s ease;transition:color .3s ease}.rc-time-picker-panel-clear-btn:hover:after{color:#666}.rc-time-picker-panel-select{float:left;font-size:12px;border:1px solid #e9e9e9;border-width:0 1px;margin-left:-1px;-webkit-box-sizing:border-box;box-sizing:border-box;width:56px;overflow:hidden;position:relative}.rc-time-picker-panel-select-active{overflow-y:auto}.rc-time-picker-panel-select:first-child{border-left:0;margin-left:0}.rc-time-picker-panel-select:last-child{border-right:0}.rc-time-picker-panel-select ul{list-style:none;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;width:100%;max-height:144px;overflow-x:hidden;overflow-y:scroll}.rc-time-picker-panel-select li{list-style:none;-webkit-box-sizing:content-box;box-sizing:content-box;margin:0;padding:0 0 0 16px;width:100%;height:24px;line-height:24px;text-align:left;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.rc-time-picker-panel-select li:hover{background:#edfaff}li.rc-time-picker-panel-select-option-selected{background:#edfaff;color:#2db7f5}li.rc-time-picker-panel-select-option-disabled{color:#bfbfbf}li.rc-time-picker-panel-select-option-disabled:hover{background:0 0;cursor:not-allowed}.tether-element.tether-element-attached-top.tether-element-attached-center.tether-target-attached-bottom.tether-target-attached-center.tether-enabled{z-index:2000}.calendarContainer *,.datepicker-input{font-family:inherit}.today button{border:3px solid #4285f4!important}.jalaali.calendarContainer .selectToday{padding:4px 0 6px 0}.calendarButton{display:block;width:100%;background:#4285f4;color:#fff;outline:0;border-radius:5px;border:0;cursor:pointer;padding:5px 0 7px 0;-webkit-transition:.2s all ease-in-out;transition:.2s all ease-in-out;-webkit-transition-property:background;transition-property:background}.calendarButton:hover{background:#1266f1}.toggleButton{margin-bottom:1rem}.selectToday{margin-top:1rem}.highLightDot-container{text-align:center;bottom:0;width:100%;position:absolute;cursor:pointer;direction:ltr}.highLightDot-container .highLightDot{border:1px solid #fff;display:inline-block;width:7px;height:7px;border-radius:50%}.highLightDot-container .highLightDot:not(:first-child){margin-left:2px}.disabled{cursor:not-allowed}button[disabled],button[disabled]:hover{color:#aaa;cursor:not-allowed;background-color:#ebebeb}";
+  var css_248z = ".calendarContainer{position:relative;border-radius:4px;-webkit-box-shadow:0 3px 15px rgba(0,0,0,.2);box-shadow:0 3px 15px rgba(0,0,0,.2);width:320px;margin:auto;text-align:center;padding:15px;background-color:#fff}.calendarContainer *{-webkit-box-sizing:border-box;box-sizing:border-box}.calendarContainer .dayPickerContainer:after,.calendarContainer .daysOfWeek:after,.calendarContainer .monthsList:after{content:'';display:block;clear:both}.datepicker-input{-webkit-box-sizing:border-box;box-sizing:border-box}.calendarContainer .heading{height:auto;font-weight:700;margin-bottom:10px}.calendarContainer .heading>button{background:0 0;margin:5px 0;border:none;text-align:center;line-height:30px;width:36px;height:32px;cursor:pointer}.calendarContainer .heading>button:hover{background-color:#f2f2f2}.calendarContainer .heading svg{width:10px;fill:#777}.calendarContainer .heading .next,.calendarContainer .heading .prev{width:42px;height:42px;border-radius:50%;margin:0}.calendarContainer .heading .prev{float:right}.calendarContainer .heading .next{float:left}.calendarContainer .heading .title{height:auto;border-radius:4px;width:auto;margin:0 5px;border:1px solid #f7f7f7;text-align:center;display:inline-block;font-weight:400;padding:4px 15px 5px 15px;line-height:1.5;font-size:1.2em;max-height:none}.jalaali.calendarContainer .heading .title{padding:4px 15px 7px 15px}.calendarContainer .dayWrapper{float:left;width:14.28571429%;margin-top:5px;position:relative}.calendarContainer .dayWrapper button{border:none;background:0 0;outline:0;width:100%;cursor:pointer;width:40px;height:40px;border-radius:50%;font-size:1.1em;padding:0;line-height:1.5;padding:0 0 1px 0}.jalaali.calendarContainer .dayWrapper button{padding:0 0 1px 0}.calendarContainer .dayWrapper:not(.selected) button:hover{background-color:#d6f1ff}.calendarContainer .dayWrapper button[disabled]{color:#aaa;cursor:not-allowed;background-color:#ebebeb}.calendarContainer .dayWrapper button.selected{background-color:#337ab7!important;color:#fff!important}.calendarContainer .dayWrapper:not(.currentMonth) button{opacity:.5}.calendarContainer .daysOfWeek{margin-bottom:5px;padding-bottom:5px;display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;color:#919191}.calendarContainer .daysOfWeek>div{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:42px}.calendarContainer .monthsList{clear:both;width:100%}.calendarContainer .monthsList button{width:33.33333332%;height:25%;float:right;border:1px solid #f9f9f9;outline:0;font-size:1em;background:#fff;padding:10px 0;cursor:pointer}.calendarContainer .monthsList button:hover{background:#eee;cursor:pointer}.calendarContainer .yearsList{clear:both;width:100%;max-height:200px;overflow-y:scroll}.calendarContainer .yearsList button{width:20%;height:25%;float:right;border:1px solid #f9f9f9;outline:0;font-size:1em;background:#fff;padding:10px 0;cursor:pointer}.calendarContainer .yearsList button:hover{background:#eee;cursor:pointer}.calendarContainer .selected button,.calendarContainer .selected button:active,.calendarContainer .selected button:focus,.calendarContainer .selected button:hover :not([disabled]){background-color:#4285f4!important;color:#fff!important}.calendarContainer.jalaali{direction:rtl}.calendarContainer.jalaali .dayWrapper{float:right}.time-picker-container{margin-bottom:10}.time-picker-container>.time-label{float:left;line-height:30px;width:50%;text-align:center}.time-picker-container>.time-picker-panel{float:right;width:50%}.time-picker-container.jalaali>.time-label{float:right}.time-picker-container.jalaali>.time-picker-panel{float:left}.rc-time-picker{border-radius:4px;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;width:110px;border:1px solid #f7f7f7;font-size:1.2em}.rc-time-picker *{-webkit-box-sizing:border-box;box-sizing:border-box}.rc-time-picker-input{margin:4px 0;padding:0 15px 1px 15px;direction:ltr;text-align:center;width:100%;position:relative;display:inline-block;cursor:pointer;font-size:1em;line-height:1.5;border:none;background-image:none;background-color:transparent;-webkit-box-shadow:none;box-shadow:none}.jalaali.calendarContainer .rc-time-picker-input{padding:0 15px 3px 15px}.rc-time-picker-input:focus{-webkit-box-shadow:none;box-shadow:none;border:none;background-color:#f2f2f2}.rc-time-picker:hover{background-color:#f2f2f2}.rc-time-picker-panel{z-index:2001;width:170px;position:absolute;-webkit-box-sizing:border-box;box-sizing:border-box}.rc-time-picker-panel *{-webkit-box-sizing:border-box;box-sizing:border-box}.rc-time-picker-panel-inner{display:inline-block;position:relative;outline:0;list-style:none;font-size:12px;text-align:left;background-color:#fff;border-radius:3px;-webkit-box-shadow:0 1px 5px #ccc;box-shadow:0 1px 5px #ccc;background-clip:padding-box;border:1px solid #ccc;line-height:1.5}.rc-time-picker-panel-input{margin:0;padding:0;width:100%;cursor:default;line-height:1.5;outline:0;border:1px solid transparent;padding:4px 0;font-size:1.4em;text-align:center;font-family:inherit}.rc-time-picker-panel-input,.rc-time-picker-panel-input:hover{-webkit-box-shadow:none;box-shadow:none;border:none}.rc-time-picker-panel-input-wrap{-webkit-box-sizing:border-box;box-sizing:border-box;position:relative;padding:6px;border-bottom:1px solid #e9e9e9}.rc-time-picker-panel-input-invalid{border-color:red}.rc-time-picker-panel-clear-btn{position:absolute;right:6px;cursor:pointer;overflow:hidden;width:20px;height:20px;text-align:center;line-height:20px;top:6px;margin:0}.rc-time-picker-panel-clear-btn:after{content:'x';font-size:12px;color:#aaa;display:inline-block;line-height:1;width:20px;-webkit-transition:color .3s ease;transition:color .3s ease}.rc-time-picker-panel-clear-btn:hover:after{color:#666}.rc-time-picker-panel-select{float:left;font-size:12px;border:1px solid #e9e9e9;border-width:0 1px;margin-left:-1px;-webkit-box-sizing:border-box;box-sizing:border-box;width:56px;overflow:hidden;position:relative}.rc-time-picker-panel-select-active{overflow-y:auto}.rc-time-picker-panel-select:first-child{border-left:0;margin-left:0}.rc-time-picker-panel-select:last-child{border-right:0}.rc-time-picker-panel-select ul{list-style:none;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;width:100%;max-height:144px;overflow-x:hidden;overflow-y:scroll}.rc-time-picker-panel-select li{list-style:none;-webkit-box-sizing:content-box;box-sizing:content-box;margin:0;padding:0 0 0 16px;width:100%;height:24px;line-height:24px;text-align:left;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.rc-time-picker-panel-select li:hover{background:#edfaff}li.rc-time-picker-panel-select-option-selected{background:#edfaff;color:#2db7f5}li.rc-time-picker-panel-select-option-disabled{color:#bfbfbf}li.rc-time-picker-panel-select-option-disabled:hover{background:0 0;cursor:not-allowed}.tether-element.tether-element-attached-top.tether-element-attached-center.tether-target-attached-bottom.tether-target-attached-center.tether-enabled{z-index:2000}.calendarContainer *,.datepicker-input{font-family:inherit}.today button{border:3px solid #4285f4!important}.highlighted{background-color:#e7f1f2}.highlighted.rangestart{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#e7f1f2),color-stop(50%,#fff));background:linear-gradient(90deg,#e7f1f2 50%,#fff 50%)}.highlighted.rangeend{background:-webkit-gradient(linear,left top,right top,color-stop(50%,#fff),color-stop(50%,#e7f1f2));background:linear-gradient(90deg,#fff 50%,#e7f1f2 50%)}.highlighted.rangeend button{background:#fff!important;border:1px solid #4285f4!important}.jalaali.calendarContainer .selectToday{padding:4px 0 6px 0}.calendarButton{display:block;width:100%;background:#4285f4;color:#fff;outline:0;border-radius:5px;border:0;cursor:pointer;padding:5px 0 7px 0;-webkit-transition:.2s all ease-in-out;transition:.2s all ease-in-out;-webkit-transition-property:background;transition-property:background}.calendarButton:hover{background:#1266f1}.toggleButton{margin-bottom:1rem}.selectToday{margin-top:1rem}.highLightDot-container{text-align:center;bottom:0;width:100%;position:absolute;cursor:pointer;direction:ltr}.highLightDot-container .highLightDot{border:1px solid #fff;display:inline-block;width:7px;height:7px;border-radius:50%}.highLightDot-container .highLightDot:not(:first-child){margin-left:2px}.disabled{cursor:not-allowed}button[disabled],button[disabled]:hover{color:#aaa;cursor:not-allowed;background-color:#ebebeb}";
   styleInject(css_248z);
 
   function unwrapExports (x) {
@@ -783,7 +783,7 @@
 
   var _objectWithoutProperties = unwrapExports(objectWithoutProperties);
 
-  var _excluded = ["day", "disabled", "selected", "isCurrentMonth", "onClick", "styles", "isGregorian", "isToday", "colors"];
+  var _excluded = ["day", "disabled", "selected", "isCurrentMonth", "onClick", "styles", "isGregorian", "isToday", "colors", "highlighted", "isRangeEnd", "isRangeStart"];
 
   function _createSuper$8(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$8(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -803,7 +803,7 @@
     _createClass(Day, [{
       key: "shouldComponentUpdate",
       value: function shouldComponentUpdate(nextProps) {
-        return nextProps.selected !== this.props.selected || nextProps.disabled !== this.props.disabled || nextProps.isCurrentMonth !== this.props.isCurrentMonth;
+        return nextProps.selected !== this.props.selected || nextProps.disabled !== this.props.disabled || nextProps.isCurrentMonth !== this.props.isCurrentMonth || nextProps.highlighted !== this.props.highlighted || nextProps.isRangeEnd !== this.props.isRangeEnd || nextProps.isRangeStart !== this.props.isRangeStart;
       }
     }, {
       key: "handleClick",
@@ -836,9 +836,12 @@
             isGregorian = _this$props2.isGregorian,
             isToday = _this$props2.isToday,
             colors = _this$props2.colors,
+            highlighted = _this$props2.highlighted,
+            isRangeEnd = _this$props2.isRangeEnd,
+            isRangeStart = _this$props2.isRangeStart,
             rest = _objectWithoutProperties(_this$props2, _excluded);
 
-        var className = classnames__default["default"](styles.dayWrapper, (_classnames = {}, _defineProperty(_classnames, styles.selected, selected), _defineProperty(_classnames, styles.currentMonth, isCurrentMonth), _defineProperty(_classnames, styles.today, isToday), _defineProperty(_classnames, styles.disabled, disabled), _classnames));
+        var className = classnames__default["default"](styles.dayWrapper, (_classnames = {}, _defineProperty(_classnames, styles.selected, selected), _defineProperty(_classnames, styles.currentMonth, isCurrentMonth), _defineProperty(_classnames, styles.today, isToday), _defineProperty(_classnames, styles.disabled, disabled), _defineProperty(_classnames, styles.highlighted, highlighted), _defineProperty(_classnames, styles.rangeend, isRangeEnd), _defineProperty(_classnames, styles.rangestart, isRangeStart), _classnames));
         var highlightDotContainer = classnames__default["default"]("highLightDot-container", _defineProperty({}, styles.disabled, disabled));
         return /*#__PURE__*/React__default["default"].createElement("div", {
           className: className
@@ -922,7 +925,10 @@
     selected: 'selected',
     today: 'today',
     dayPickerContainer: 'dayPickerContainer',
-    disabled: 'disabled'
+    disabled: 'disabled',
+    highlighted: 'highlighted',
+    rangeend: 'rangeend',
+    rangestart: 'rangestart'
   };
 
   var MomentRange = require('moment-range');
@@ -1003,8 +1009,11 @@
       _defineProperty(_assertThisInitialized(_this), "state", {
         year: _this.props.defaultYear || _this.props.selectedDay || momentJalaali__default["default"](_this.props.min),
         month: _this.props.defaultMonth || _this.props.selectedDay || momentJalaali__default["default"](_this.props.min),
-        selectedDay: _this.props.selectedDay || _this.props.value || momentJalaali__default["default"](),
+        selectedDay: _this.props.selectedDay || !_this.props.isRangeSelector && _this.props.value || momentJalaali__default["default"](),
+        startDay: _this.props.value.startDay,
+        endDay: _this.props.value.endDay,
         mode: 'days',
+        rangeStart: true,
         isGregorian: _this.props.isGregorian,
         ranges: new RangesList(_this.props.ranges)
       });
@@ -1067,10 +1076,13 @@
         });
       });
 
-      _defineProperty(_assertThisInitialized(_this), "selectDay", function (selectedDay) {
+      _defineProperty(_assertThisInitialized(_this), "selectDay", function (selectedDay, isRangeSelector) {
         var _this$state = _this.state,
             month = _this$state.month,
             isGregorian = _this$state.isGregorian;
+            _this$state.rangeStart;
+            _this$state.startDay;
+            _this$state.endDay;
         var yearMonthFormat = isGregorian ? 'YYYYMM' : 'jYYYYjMM';
 
         if (!selectedDay) {
@@ -1090,23 +1102,57 @@
           });
         }
 
-        _this.setState({
-          selectedDay: selectedDay
-        });
+        if (isRangeSelector) {
+          if (_this.state.rangeStart) {
+            _this.setState({
+              selectedDay: selectedDay,
+              rangeStart: !_this.state.rangeStart,
+              startDay: selectedDay,
+              endDay: undefined
+            });
+          } else {
+            _this.setState({
+              rangeStart: !_this.state.rangeStart,
+              endDay: selectedDay
+            });
+          }
+        } else {
+          _this.setState({
+            selectedDay: selectedDay
+          });
+        }
       });
 
       _defineProperty(_assertThisInitialized(_this), "handleClickOnDay", function (selectedDay) {
         var _this$props = _this.props,
             onSelect = _this$props.onSelect,
-            onChange = _this$props.onChange;
+            onChange = _this$props.onChange,
+            isRangeSelector = _this$props.isRangeSelector;
+        var _this$state2 = _this.state,
+            startDay = _this$state2.startDay,
+            rangeStart = _this$state2.rangeStart;
 
-        _this.selectDay(selectedDay);
+        _this.selectDay(selectedDay, isRangeSelector);
 
-        if (onSelect) {
-          onSelect(selectedDay);
+        if (isRangeSelector) {
+          if (onSelect && startDay && !rangeStart) {
+            onSelect({
+              startDay: startDay,
+              endDay: selectedDay
+            });
+          }
+
+          if (onChange && startDay && !rangeStart) onChange({
+            startDay: startDay,
+            endDay: selectedDay
+          });
+        } else {
+          if (onSelect) {
+            onSelect(selectedDay);
+          }
+
+          if (onChange) onChange(selectedDay);
         }
-
-        if (onChange) onChange(selectedDay);
       });
 
       _defineProperty(_assertThisInitialized(_this), "handleClickOutside", function (event) {
@@ -1120,9 +1166,9 @@
       _defineProperty(_assertThisInitialized(_this), "lastRenderedMonth", null);
 
       _defineProperty(_assertThisInitialized(_this), "renderMonthSelector", function () {
-        var _this$state2 = _this.state,
-            month = _this$state2.month,
-            isGregorian = _this$state2.isGregorian;
+        var _this$state3 = _this.state,
+            month = _this$state3.month,
+            isGregorian = _this$state3.isGregorian;
         var _this$props2 = _this.props,
             styles = _this$props2.styles,
             disableYearSelector = _this$props2.disableYearSelector;
@@ -1135,10 +1181,10 @@
       });
 
       _defineProperty(_assertThisInitialized(_this), "renderYearSelector", function () {
-        var _this$state3 = _this.state,
-            year = _this$state3.year,
-            month = _this$state3.month,
-            isGregorian = _this$state3.isGregorian;
+        var _this$state4 = _this.state,
+            year = _this$state4.year,
+            month = _this$state4.month,
+            isGregorian = _this$state4.isGregorian;
         var styles = _this.props.styles;
         return /*#__PURE__*/React__default["default"].createElement(YearSelector, {
           styles: styles,
@@ -1149,10 +1195,12 @@
       });
 
       _defineProperty(_assertThisInitialized(_this), "renderDays", function () {
-        var _this$state4 = _this.state,
-            month = _this$state4.month,
-            selectedDay = _this$state4.selectedDay,
-            isGregorian = _this$state4.isGregorian;
+        var _this$state5 = _this.state,
+            month = _this$state5.month,
+            selectedDay = _this$state5.selectedDay,
+            isGregorian = _this$state5.isGregorian,
+            startDay = _this$state5.startDay,
+            endDay = _this$state5.endDay;
         var _this$props3 = _this.props,
             children = _this$props3.children,
             min = _this$props3.min,
@@ -1187,9 +1235,12 @@
           var isCurrentMonth = day.format(monthFormat) === month.format(monthFormat);
           var selected = selectedDay ? selectedDay.isSame(day, 'day') : false;
           var key = day.format(dateFormat);
-          var isToday = checkToday(day.format('YYYYMMDD')); // disabling by old min-max props
+          var isToday = checkToday(day.format('YYYYMMDD'));
+          var isRangeStart = startDay && startDay.isSame(day, 'day');
+          var isRangeEnd = endDay && endDay.isSame(day, 'day');
+          var highlighted = startDay && endDay && (day.isBetween(startDay, endDay) || isRangeStart || isRangeEnd); // disabling by old min-max props
 
-          var disabled = (min ? day.isBefore(min) : false) || (max ? day.isAfter(max) : false); // new method for disabling and highlighting the ranges of days
+          var disabled = (min ? day.isBefore(min) : false) || (max ? day.isAfter(max) : false) || startDay && !endDay && day.isSameOrBefore(startDay); // new method for disabling and highlighting the ranges of days
 
           var dayState = _this.state.ranges.getDayState(day);
 
@@ -1199,12 +1250,15 @@
             onClick: _this.handleClickOnDay,
             day: day,
             isToday: isToday,
+            isRangeEnd: isRangeEnd,
+            isRangeStart: isRangeStart,
             colors: dayState.colors,
             disabled: disabled || dayState.disabled // disabled by old method or new range method
             ,
             selected: selected,
             isCurrentMonth: isCurrentMonth,
-            styles: styles
+            styles: styles,
+            highlighted: highlighted
           });
         })));
       });
@@ -1275,9 +1329,9 @@
             var styles = _this$props4.styles,
             className = _this$props4.className,
             showTodayButton = _this$props4.showTodayButton;
-        var _this$state5 = this.state,
-            mode = _this$state5.mode,
-            isGregorian = _this$state5.isGregorian;
+        var _this$state6 = this.state,
+            mode = _this$state6.mode,
+            isGregorian = _this$state6.isGregorian;
         var jalaaliClassName = isGregorian ? '' : 'jalaali ';
         var today = momentJalaali__default["default"]();
         today.set({
@@ -1330,7 +1384,8 @@
     showToggleButton: PropTypes__default["default"].bool,
     toggleButtonText: PropTypes__default["default"].any,
     showTodayButton: PropTypes__default["default"].bool,
-    disableYearSelector: PropTypes__default["default"].bool
+    disableYearSelector: PropTypes__default["default"].bool,
+    isRangeSelector: PropTypes__default["default"].bool
   });
 
   _defineProperty(Calendar, "childContextTypes", {

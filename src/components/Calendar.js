@@ -29,6 +29,7 @@ export class Calendar extends Component {
     toggleButtonText: PropTypes.any,
     showTodayButton: PropTypes.bool,
     disableYearSelector: PropTypes.bool,
+    isRangeSelector: PropTypes.bool,
   };
 
   static childContextTypes = {
@@ -52,8 +53,11 @@ export class Calendar extends Component {
   state = {
     year: this.props.defaultYear || this.props.selectedDay || momentJalaali(this.props.min),
     month: this.props.defaultMonth || this.props.selectedDay || momentJalaali(this.props.min),
-    selectedDay: this.props.selectedDay || this.props.value || momentJalaali(),
+    selectedDay: this.props.selectedDay || !this.props.isRangeSelector && this.props.value || momentJalaali(),
+    startDay: this.props.value.startDay,
+    endDay: this.props.value.endDay,
     mode: 'days',
+    rangeStart: true,
     isGregorian: this.props.isGregorian,
     ranges: new RangeList(this.props.ranges)
   };
@@ -152,8 +156,8 @@ export class Calendar extends Component {
     );
   };
 
-  selectDay = selectedDay => {
-    const { month, isGregorian } = this.state;
+  selectDay = (selectedDay, isRangeSelector) => {
+    const { month, isGregorian, rangeStart, startDay, endDay } = this.state;
     const yearMonthFormat = isGregorian ? 'YYYYMM' : 'jYYYYjMM';
 
     if (!selectedDay) {
@@ -169,17 +173,34 @@ export class Calendar extends Component {
     if (selectedDay.format(yearMonthFormat) !== month.format(yearMonthFormat)) {
       this.setState({ month: selectedDay });
     }
-
-    this.setState({ selectedDay });
+    if (isRangeSelector) {
+      if (this.state.rangeStart) {
+        this.setState({ selectedDay, rangeStart: !this.state.rangeStart, startDay: selectedDay, endDay: undefined });
+      } else {
+        this.setState({ rangeStart: !this.state.rangeStart, endDay: selectedDay });
+      }
+    } else {
+      this.setState({ selectedDay });
+    }
   };
 
   handleClickOnDay = selectedDay => {
-    const { onSelect, onChange } = this.props;
-    this.selectDay(selectedDay);
-    if (onSelect) {
-      onSelect(selectedDay);
+    const { onSelect, onChange, isRangeSelector } = this.props;
+    const { startDay, rangeStart } = this.state;
+    this.selectDay(selectedDay, isRangeSelector);
+    
+    if (isRangeSelector) {
+      if (onSelect && startDay && !rangeStart) {
+        onSelect({startDay, endDay: selectedDay});
+      }
+      if (onChange && startDay && !rangeStart) onChange({startDay, endDay: selectedDay});      
+
+    } else {
+      if (onSelect) {
+        onSelect(selectedDay);
+      }
+      if (onChange) onChange(selectedDay);
     }
-    if (onChange) onChange(selectedDay);
   };
 
   handleClickOutside = event => {
@@ -212,7 +233,7 @@ export class Calendar extends Component {
   };
 
   renderDays = () => {
-    const { month, selectedDay, isGregorian } = this.state;
+    const { month, selectedDay, isGregorian, startDay, endDay } = this.state;
     const { children, min, max, styles, outsideClickIgnoreClass } = this.props;
 
     let days;
@@ -244,9 +265,14 @@ export class Calendar extends Component {
             const selected = selectedDay ? selectedDay.isSame(day, 'day') : false;
             const key = day.format(dateFormat);
             const isToday = checkToday(day.format('YYYYMMDD'));
+            const isRangeStart = startDay && startDay.isSame(day, 'day');
+            const isRangeEnd = endDay && endDay.isSame(day, 'day');
+
+            const highlighted = startDay && endDay && (day.isBetween(startDay, endDay) || isRangeStart || isRangeEnd);
 
             // disabling by old min-max props
-            const disabled = (min ? day.isBefore(min) : false) || (max ? day.isAfter(max) : false);
+            const disabled = (min ? day.isBefore(min) : false) || (max ? day.isAfter(max) : false)
+            || (startDay && !endDay && day.isSameOrBefore(startDay));
 
             // new method for disabling and highlighting the ranges of days
             const dayState = this.state.ranges.getDayState(day);
@@ -258,11 +284,14 @@ export class Calendar extends Component {
                 onClick={this.handleClickOnDay}
                 day={day}
                 isToday={isToday}
+                isRangeEnd={isRangeEnd}
+                isRangeStart={isRangeStart}
                 colors={dayState.colors}
                 disabled={disabled || dayState.disabled} // disabled by old method or new range method
                 selected={selected}
                 isCurrentMonth={isCurrentMonth}
                 styles={styles}
+                highlighted={highlighted}
               />
             );
           })}

@@ -17,7 +17,10 @@ export default class Day extends Component {
     return (
       nextProps.selected !== this.props.selected ||
       nextProps.disabled !== this.props.disabled ||
-      nextProps.isCurrentMonth !== this.props.isCurrentMonth
+      nextProps.isCurrentMonth !== this.props.isCurrentMonth ||
+      nextProps.highlighted !== this.props.highlighted ||
+      nextProps.isRangeEnd !== this.props.isRangeEnd ||
+      nextProps.isRangeStart !== this.props.isRangeStart
     );
   }
 
@@ -46,6 +49,9 @@ export default class Day extends Component {
       isGregorian,
       isToday,
       colors,
+      highlighted,
+      isRangeEnd,
+      isRangeStart,
       ...rest
     } = this.props;
 
@@ -53,7 +59,10 @@ export default class Day extends Component {
       [styles.selected]: selected,
       [styles.currentMonth]: isCurrentMonth,
       [styles.today]: isToday,
-      [styles.disabled]: disabled
+      [styles.disabled]: disabled,
+      [styles.highlighted]: highlighted,
+      [styles.rangeend]: isRangeEnd,
+      [styles.rangestart]: isRangeStart,
     });
 
     const highlightDotContainer = classnames("highLightDot-container", {
