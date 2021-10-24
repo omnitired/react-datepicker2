@@ -17,17 +17,21 @@ export default class RangesList {
         // include start
         const start = range.start.add(-1, 'days');
 
-        this.ranges.push({ color: item.color, range, disabled: !!item.disabled });
+        this.ranges.push({ color: item.color, range, disabled: !!item.disabled, enabled: !!item.enabled });
       });
     }
   }
 
   getDayState(day) {
-    const disabled = this.ranges.some(x => x.disabled && x.range.contains(day));
+    const enabled = this.ranges.some(x => x.enabled);
 
+
+    const disabled = this.ranges.some( x => (x.disabled && x.range.contains(day)) || (enabled && x.range.contains(day)) );
+
+    console.log(this.ranges.some(x => x.range.contains(day)))
     const colors = this.ranges.filter(x => x.color && x.range.contains(day)).map(x => x.color);
 
-    return { disabled, colors };
+    return { disabled: enabled? !disabled : disabled, colors };
   }
 
   validateRangeObject(range) {

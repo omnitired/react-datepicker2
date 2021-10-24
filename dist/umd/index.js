@@ -957,7 +957,8 @@
           _this.ranges.push({
             color: item.color,
             range: range,
-            disabled: !!item.disabled
+            disabled: !!item.disabled,
+            enabled: !!item.enabled
           });
         });
       }
@@ -966,16 +967,22 @@
     _createClass(RangesList, [{
       key: "getDayState",
       value: function getDayState(day) {
-        var disabled = this.ranges.some(function (x) {
-          return x.disabled && x.range.contains(day);
+        var enabled = this.ranges.some(function (x) {
+          return x.enabled;
         });
+        var disabled = this.ranges.some(function (x) {
+          return x.disabled && x.range.contains(day) || enabled && x.range.contains(day);
+        });
+        console.log(this.ranges.some(function (x) {
+          return x.range.contains(day);
+        }));
         var colors = this.ranges.filter(function (x) {
           return x.color && x.range.contains(day);
         }).map(function (x) {
           return x.color;
         });
         return {
-          disabled: disabled,
+          disabled: enabled ? !disabled : disabled,
           colors: colors
         };
       }

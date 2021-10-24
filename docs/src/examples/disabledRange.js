@@ -8,17 +8,17 @@ class component extends React.Component {
 
     this.state = {
       value: momentJalaali(),
-      isGregorian: true
+      isGregorian: false
     };
 
     this.disabledRanges = [
       { 
-        disabled: true, 
+        enabled: true, 
         start:momentJalaali().add(-1,'days'),
         end:momentJalaali().add(1,'days') 
       },
       { 
-        disabled: true, 
+        enabled: true, 
         start:momentJalaali().add(3,'days'), 
         end:momentJalaali().add(6,'days') 
       }
