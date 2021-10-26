@@ -28,7 +28,6 @@ export default class RangesList {
 
     const disabled = this.ranges.some( x => (x.disabled && x.range.contains(day)) || (enabled && x.range.contains(day)) );
 
-    console.log(this.ranges.some(x => x.range.contains(day)))
     const colors = this.ranges.filter(x => x.color && x.range.contains(day)).map(x => x.color);
 
     return { disabled: enabled? !disabled : disabled, colors };

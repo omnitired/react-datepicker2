@@ -973,9 +973,6 @@
         var disabled = this.ranges.some(function (x) {
           return x.disabled && x.range.contains(day) || enabled && x.range.contains(day);
         });
-        console.log(this.ranges.some(function (x) {
-          return x.range.contains(day);
-        }));
         var colors = this.ranges.filter(function (x) {
           return x.color && x.range.contains(day);
         }).map(function (x) {
