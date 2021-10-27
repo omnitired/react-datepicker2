@@ -134,8 +134,8 @@ $hoverColor: #d6f1ff;
 }
 
 .calendarContainer .dayWrapper button.selected {
-  background-color: #337ab7 !important;
-  color: #ffffff !important;
+  background-color: #337ab7 ;
+  color: #ffffff ;
 }
 
 .calendarContainer .dayWrapper:not(.currentMonth) button {
@@ -214,8 +214,8 @@ $hoverColor: #d6f1ff;
 .calendarContainer .selected button:hover :not([disabled]),
 .calendarContainer .selected button:active,
 .calendarContainer .selected button:focus {
-  background-color: $selectedColor !important;
-  color: #ffffff !important;
+  background-color: $selectedColor;
+  color: #ffffff;
 }
 
 .calendarContainer.jalaali {
@@ -461,7 +461,7 @@ li.rc-time-picker-panel-select-option-disabled:hover {
 
 .today {
   button {
-    border: 3px solid #4285f4 !important;
+    border: 3px solid #4285f4;
   }
 }
 
