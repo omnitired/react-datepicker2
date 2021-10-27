@@ -513,7 +513,8 @@
             setMonth = _this$context.setMonth,
             setCalendarMode = _this$context.setCalendarMode;
         var isGregorian = this.props.isGregorian;
-        var monthYearFormat = isGregorian ? 'M-YYYY' : 'jM-jYYYY';
+        var monthYearFormat = isGregorian ? 'M-YYYY' : 'jM-jYYYY'; // console.log('monthselector', key, momentJalaali(key, monthYearFormat))
+
         setMonth(momentJalaali__default["default"](key, monthYearFormat));
         setCalendarMode('days');
       }
@@ -543,7 +544,7 @@
         }), /*#__PURE__*/React__default["default"].createElement("div", {
           className: styles.monthsList
         }, months.map(function (name, key) {
-          var buttonFingerprint = "".concat(key + 1, "-").concat(year.format(yearFormat));
+          var buttonFingerprint = "".concat(key + 1, "-").concat(year.locale('en').format(yearFormat));
           var selectedMonthFingerprint = selectedMonth.format(monthYearFormat);
           var isCurrent = selectedMonthFingerprint === buttonFingerprint;
           var className = classnames__default["default"](styles.monthWrapper, _defineProperty({}, styles.selected, isCurrent));

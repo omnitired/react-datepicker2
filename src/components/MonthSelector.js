@@ -68,6 +68,7 @@ export default class MonthSelector extends Component {
     const { setMonth, setCalendarMode } = this.context;
     const { isGregorian } = this.props;
     const monthYearFormat = isGregorian ? 'M-YYYY' : 'jM-jYYYY';
+    // console.log('monthselector', key, momentJalaali(key, monthYearFormat))
     setMonth(momentJalaali(key, monthYearFormat));
     setCalendarMode('days');
   }
@@ -91,7 +92,7 @@ export default class MonthSelector extends Component {
         />
         <div className={styles.monthsList}>
           {months.map((name, key) => {
-            const buttonFingerprint = `${key + 1}-${year.format(yearFormat)}`;
+            const buttonFingerprint = `${key + 1}-${year.locale('en').format(yearFormat)}`;
             const selectedMonthFingerprint = selectedMonth.format(monthYearFormat);
             const isCurrent = selectedMonthFingerprint === buttonFingerprint;
 
