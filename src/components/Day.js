@@ -10,7 +10,8 @@ export default class Day extends Component {
     disabled: PropTypes.bool,
     selected: PropTypes.bool,
     onClick: PropTypes.func,
-    isGregorian: PropTypes.bool
+    isGregorian: PropTypes.bool,
+    notes: PropTypes.array,
   };
 
   shouldComponentUpdate(nextProps) {
@@ -30,8 +31,7 @@ export default class Day extends Component {
     event.nativeEvent.stopImmediatePropagation();
 
     const { disabled, onClick, day } = this.props;
-    if (disabled)
-      return;
+    if (disabled) return;
 
     if (onClick) {
       onClick(day);
@@ -52,6 +52,7 @@ export default class Day extends Component {
       highlighted,
       isRangeEnd,
       isRangeStart,
+      notes,
       ...rest
     } = this.props;
 
@@ -66,18 +67,33 @@ export default class Day extends Component {
       [styles.highlighted]: highlighted,
       [styles.rangeend]: isRangeEnd,
       [styles.rangestart]: isRangeStart,
-    })
+    });
 
-    const highlightDotContainer = classnames("highLightDot-container", {
-      [styles.disabled]: disabled
+    const highlightDotContainer = classnames('highLightDot-container', {
+      [styles.disabled]: disabled,
     });
 
     return (
       <div className={className}>
         <div className={highlightContainer}>
-        <button type="button" onClick={this.handleClick.bind(this)} disabled={disabled} {...rest}>
-          {isGregorian ? day.format('D') : persianNumber(day.format('jD'))}
-        </button>
+          <button
+            type="button"
+            className="day-button"
+            onClick={this.handleClick.bind(this)}
+            disabled={disabled}
+            {...rest}
+          >
+            <span className="day-number">
+              {isGregorian ? day.format('D') : persianNumber(day.format('jD'))}
+            </span>
+            {notes && (
+              <ul className="notes">
+                {notes.map((note, index) => (
+                  <li key={`note-${index}`}>{note}</li>
+                ))}
+              </ul>
+            )}
+          </button>
         </div>
         <div className={highlightDotContainer} onClick={this.handleClick.bind(this)}>
           {colors.map((x, i) => (
