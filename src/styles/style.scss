@@ -134,8 +134,8 @@ $hoverColor: #d6f1ff;
 }
 
 .calendarContainer .dayWrapper button.selected {
-  background-color: #337ab7 ;
-  color: #ffffff ;
+  background-color: #337ab7;
+  color: #ffffff;
 }
 
 .calendarContainer .dayWrapper:not(.currentMonth) button {
@@ -468,7 +468,7 @@ li.rc-time-picker-panel-select-option-disabled:hover {
 .highlighted {
   background-color: #e7f1f2;
   &.rangestart {
-    background: linear-gradient(90deg, #e7f1f2 50%, transparent 50%,);
+    background: linear-gradient(90deg, #e7f1f2 50%, transparent 50%);
     // button {
     //   background: white !important;
     //   border: 1px solid #4285f4 !important;
@@ -545,4 +545,86 @@ button[disabled]:hover {
   color: #aaa;
   cursor: not-allowed;
   background-color: #ebebeb;
+}
+
+/* schedule mode */
+.schedule.calendarContainer {
+  width: 100%;
+  .dayPickerContainer {
+    border: 1px solid #eaecf0;
+    border-width: 0 0 1px 1px;
+
+    .dayWrapper {
+      margin: 0;
+      border: 1px solid #eaecf0;
+      border-width: 1px 1px 0 0;
+      position: relative;
+
+      button.day-button {
+        width: 100%;
+        border-radius: 0;
+        height: 0;
+        padding-top: 100%;
+        position: relative;
+
+        .day-number {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          margin: 5px;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+
+        ul.notes {
+          position: absolute;
+          top: 30px;
+          right: 0;
+          font-size: 12px;
+          list-style: none;
+          margin: 0;
+          width: 100%;
+          text-align: start;
+          padding: 0 6px;
+          li {
+            &::before {
+              content: ''; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+              background-color: #12b76a; /* Change the color */
+              font-weight: bold; /* If you want it to be bold */
+              display: inline-block; /* Needed to add space between the bullet and the text */
+              width: 8px; /* Also needed for space (tweak if needed) */
+              height: 8px;
+              border-radius: 50%;
+              font-size: 20px;
+              margin: 0 8px;
+            }
+          }
+        }
+      }
+
+      .highLightDot-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .selected button.day-button,
+  .selected button.day-button:hover :not([disabled]),
+  .selected button.day-button:active,
+  .selected button.day-button:focus {
+    background-color: unset;
+    color: unset;
+
+    .day-number {
+      background-color: $selectedColor !important;
+      color: #ffffff !important;
+    }
+  }
 }
